@@ -1,0 +1,759 @@
+/* Satinder Singh */
+
+@import "compass/css3";
+
+/* price.html styling here */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.speaker {
+    margin-top: -2%;
+}
+
+.price,
+.priceSection {
+    background-color: black;
+    color: white;
+}
+
+.price {
+    padding: 7% 1% 5%;
+    padding-top: 20%;
+    text-align: center;
+}
+
+.price h1,
+p,
+li {
+    text-align: left;
+}
+
+h1 {
+    letter-spacing: 5px;
+    line-height: 40px;
+}
+
+.sublinePrice {
+    word-spacing: 6.5px;
+}
+
+ul {
+    padding-left: 1.7%;
+}
+
+li {
+    list-style: none;
+}
+
+.music li:before,
+.dejavu {
+    content: "\266a";
+    position: relative;
+    left: -0.5em;
+}
+
+.basicItems {
+    color: #CF4747;
+}
+
+.basichr {
+    border-color: #CF4747;
+}
+
+.advancedItems {
+    color: #FCB53F;
+}
+
+.advancedhr {
+    border-color: #FCB53F;
+}
+
+.basichr,
+.advancedhr,
+.proHr {
+    border-width: 1px;
+}
+
+.proItems {
+    color: #19E2F2;
+}
+
+.proHr {
+    border-color: #19E2F2;
+}
+
+.button {
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0.5em 2em;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    border-radius: 100px;
+}
+
+.button span {
+    position: relative;
+    pointer-events: none;
+}
+
+.button::before {
+    --size: 0;
+    content: '';
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: var(--size);
+    height: var(--size);
+    background: radial-gradient(circle closest-side, #4405f7, transparent);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: width .2s ease, height .2s ease;
+}
+
+.button:hover::before {
+    --size: 400px;
+}
+
+.basicButton {
+    background: #f72359;
+}
+
+.advancedButton {
+    background-color: #FCB53F;
+}
+
+.proButton {
+    background-color: #19E2F2;
+}
+
+.priceSection {
+    padding: 0 5% 2%;
+}
+
+
+/* Payment Style */
+
+.Padding {
+    padding: 5% 5%;
+}
+
+.paymentHeading {
+    padding: 10% 10%;
+}
+
+.priceHeading {
+    line-height: 7rem;
+}
+
+.priceText {
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+
+.cardText {
+    letter-spacing: 1px;
+}
+
+label {
+    margin-right: 3%;
+}
+
+label[for="radioBasic"] {
+    color: #f72359;
+}
+
+label[for="radioAdvanced"] {
+    color: #FCB53F;
+}
+
+label[for="radioPro"] {
+    color: #19E2F2;
+}
+
+input[type="text"],
+.billingArea {
+    display: block;
+    width: 50%;
+    margin-top: 4px;
+    margin-left: 30px;
+}
+
+.billingArea,
+.creditArea {
+    font-size: 13px;
+}
+
+.postalStyle,
+.cityStyle,
+.monthStyle {
+    float: left
+}
+
+.cityStyle {
+    margin-right: -10%;
+}
+
+.year {
+    width: 45%;
+}
+
+.monthStyle,
+.year {
+    width: 45%;
+}
+
+input[type=text] {
+    outline: none;
+    border: 1px solid #DDDDDD;
+}
+
+input[type=text]:focus {
+    @include box-shadow(0 0 5px rgba(81, 203, 238, 1));
+    border-bottom: 1px solid #961bff;
+}
+
+.termsDiv {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.terms {
+    color: darkorchid;
+}
+
+.creditArea {
+    display: block;
+    margin-top: 4px;
+    margin-left: 30px;
+}
+
+
+/* Payment page download button style */
+
+.download {
+    outline: 0;
+    border-radius: 50px;
+    font-size: 0.8em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 4px;
+    overflow: hidden;
+    position: relative;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    color: white;
+}
+
+.download::after,
+.download::before {
+    content: "";
+    position: absolute;
+}
+
+.download:hover,
+.download:focus {
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.download::after {
+    background: #222;
+    border-radius: 120px;
+    content: attr(data-text);
+    color: #fff;
+    padding-top: 0.6em;
+    padding-left: 1.5em;
+    top: 0.4em;
+    left: 0.5em;
+    -moz-user-select: none;
+    user-select: none;
+    user-drag: none;
+}
+
+.download::before {
+    background: transparent;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 1em 2em 3em rgba(255, 50, 0, 0.5), 4em 0em 2em 2em rgba(155, 50, 0, 0.6), -4em -2em 2em 2em rgba(255, 0, 150, 0.5), -4em 2em 2em 4em rgba(0, 0, 150, 0.5), 0 -3em 2em 3em rgba(120, 250, 0, 0.5), 2em -1em 2em 2em rgba(50, 10, 200, 0.5);
+    width: 0;
+    height: 0;
+    animation: mix 5s linear infinite;
+}
+
+@keyframes mix {
+    30% {
+        box-shadow: 0 -1em 2em 3em rgba(255, 0, 200, 0.5), 4em -1em 2em 3em rgba(255, 50, 0, 0.8), -4em 2em 3em 2em rgba(155, 200, 0, 0.5), -4em -2em 2em 2em rgba(200, 0, 150, 0.6), 0 3em 2em 2em rgba(20, 250, 0, 0.5), 2em 1em 2em 2em rgba(50, 10, 250, 0.5);
+    }
+    60% {
+        box-shadow: 2em 1em 2em 3em rgba(55, 0, 200, 0.5), 3em 1em 2em 3em rgba(25, 150, 0, 0.6), 3em -2em 3em 3em rgba(155, 200, 0, 0.5), -4em 2em 2em 3em rgba(200, 0, 50, 0.6), 0 -3em 2em 3em rgba(200, 250, 0, 0.5), -2em 1em 2em 3em rgba(50, 210, 250, 0.6);
+    }
+}
+
+.download::after {
+    background: transparent !important;
+    color: #222 !important;
+}
+
+
+/* download button class */
+
+.testButton {
+    display: flex;
+}
+
+#linkDownlad {
+    pointer-events: none;
+}
+
+
+/* Speaker Section */
+
+.speaker {
+    padding: 5% 5%;
+    background-color: #D34848;
+}
+
+.buttonClass {
+    padding-top: 9px;
+    text-align: right;
+}
+
+.tryButton {
+    background: transparent linear-gradient(90deg, #5E33D1 0%, #1FE1E9 100%) 0% 0% no-repeat padding-box;
+    padding: 0.2em 1em;
+    font-size: 23px;
+    letter-spacing: 1.8px;
+    opacity: 1;
+}
+
+.speakerHeading {
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 74px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    line-height: 90px;
+}
+
+.center {
+    padding-top: 7%;
+}
+
+.subHeading {
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 51px;
+    color: #0B0B0B;
+    letter-spacing: 6x;
+    line-height: 61px;
+    padding-bottom: 13%;
+}
+
+.demoButton {
+    font-weight: bold;
+    padding: 0.2em 1em;
+    color: #D1346E;
+    background-color: white;
+    font-size: 28px;
+    padding: 27px 100px;
+    border: none;
+    border-radius: 79px;
+    opacity: 1;
+}
+
+.common {
+    width: 65%;
+    height: 70%;
+}
+
+.secondImage {
+    position: relative;
+    bottom: 34%;
+    left: 75%;
+}
+
+.firstImage {
+    position: relative;
+    top: 10%;
+    left: 5%;
+}
+
+.testing {
+    height: 560px;
+    cursor: none;
+}
+
+
+/* Change cursor  */
+
+.cursorType {
+    z-index: 15;
+    cursor: none;
+    text-align: center;
+    padding: 4%;
+    color: white;
+    border: 1px solid white;
+    border-radius: 100%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+}
+
+
+/* Fill the content of circle cursor  */
+
+.cursorType::after {
+    content: attr(id);
+}
+
+
+/* Review  */
+
+.reviews {
+    padding: 5% 5%;
+    background-color: #1FE1E9;
+}
+
+.tryButtonReview {
+    color: #1FE1E9;
+    background: transparent linear-gradient(270deg, white 0%, white 100%) 0% 0% no-repeat padding-box;
+}
+
+.tryButtonReview::before {
+    background: radial-gradient(circle closest-side, white, transparent);
+}
+
+.reviewImageCommon {
+    position: relative;
+    right: 100px;
+    bottom: 20px;
+}
+
+.reviewSecondImage {
+    position: relative;
+    bottom: 270px;
+}
+
+.reviewHeading {
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-weight: bold;
+    font-size: 74px;
+    letter-spacing: 7.4px;
+    text-align: left;
+}
+
+.rSubHeading {
+    padding-top: 20px;
+    font-weight: bold;
+    color: white;
+    font-size: 35px;
+    letter-spacing: 3.5px;
+}
+
+.rContent {
+    font-size: 25px;
+    letter-spacing: 3.5px;
+    color: #191919;
+    opacity: 1;
+    text-align: left;
+}
+
+
+/* Perks Section */
+
+.perks {
+    background-color: #D34848;
+    padding: 5%;
+    color: white;
+}
+
+hr {
+    width: 50%;
+    text-align: left;
+    margin-left: 0;
+}
+
+.perksLine {
+    border-color: white;
+    border-width: 1px;
+    width: 25%;
+}
+
+.subLine {
+    color: black;
+    font-weight: bold;
+}
+
+.priceFotter {
+    padding: 5%;
+    background-color: #5E33D1;
+}
+
+.mailLink {
+    color: white;
+    font-size: 20px;
+}
+
+.fotterHeading {
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.fotterSub {
+    color: white;
+    text-align: center;
+}
+
+.icon {
+    color: white;
+    padding-right: 1%;
+}
+
+
+/* Yellow */
+
+.yellow {
+    background-image: url("../images/Image 41.png");
+    height: 700px;
+    width: 100%;
+    height: auto;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.back {
+    height: 700px;
+    padding: 5%;
+    background-color: #FFB33F;
+    /* background: transparent; */
+    /* opacity: 0; */
+}
+
+.yelloTryButton {
+    background-color: white;
+    color: #FFB33F;
+}
+
+.yelloTryButton::before {
+    background: transparent linear-gradient(90deg, #D34848 0%, #5E33D1 100%) 0% 0% no-repeat padding-box;
+}
+
+.position {
+    position: relative;
+    left: 150px;
+    top: 2.5px;
+}
+
+.yelloHeading {
+    color: white;
+    font-weight: bold;
+    font-size: 70px;
+    letter-spacing: 1px;
+    text-align: left;
+    padding-top: 60px;
+}
+
+.yelloSubline {
+    color: black;
+    font-size: 50px;
+    letter-spacing: 5.1px;
+}
+
+.yelloButton {
+    background-color: white;
+    color: #FFB33F;
+}
+
+.dragType {
+    cursor: none;
+    text-align: center;
+    padding: 4%;
+    color: white;
+    border: 1px solid white;
+    border-radius: 100%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+}
+
+.dragType::after {
+    content: attr(id);
+}
+
+
+/* Perks */
+
+.subLinePerks {
+    color: white;
+    font: bold;
+}
+
+.perksFirst {
+    color: #D34848;
+}
+
+.perksSecond {
+    color: #1FE1E9;
+}
+
+.perksThird {
+    color: #FFB33F;
+}
+
+.perksFirstLine {
+    background-color: #D34848;
+    width: 20%;
+    margin-left: 0;
+}
+
+.perksSecondLine {
+    background-color: #1FE1E9;
+    width: 20%;
+    margin-left: 0;
+}
+
+.perksThirdLine {
+    background-color: #FFB33F;
+    width: 20%;
+    margin-left: 0;
+}
+
+.try {
+    background: transparent linear-gradient(90deg, #1FE1E9 0%, #5E33D1 34%, #D34848 65%, #FFB33F 100%) 0% 0% no-repeat padding-box;
+    position: relative;
+    top: 79px;
+    right: 100px;
+}
+
+
+/* First Section */
+
+.img1 {
+    background-image: url("../images/Image 1.png");
+    padding-bottom: 7%;
+    width: 100%;
+    height: auto;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.img2 {
+    background-image: url("../images/Image 2.png");
+    padding-bottom: 7%;
+    width: 100%;
+    height: auto;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.img3 {
+    background-image: url("../images/Image 3.png");
+    padding-bottom: 7%;
+    width: 100%;
+    height: auto;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.landingMainHeading {
+    text-align: center;
+    padding-top: 22%;
+    font-weight: bold;
+    letter-spacing: 5.5px;
+    color: white;
+    opacity: 1;
+}
+
+.landingMainPara {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    color: #FFFFFF;
+    opacity: 1;
+    padding-top: 10px;
+}
+
+.girlsDancingButton {
+    background: transparent linear-gradient(90deg, #1FE1E9 0%, #5E33D1 34%, #D34848 65%, #FFB33F 100%) 0% 0% no-repeat padding-box;
+    border-radius: 79px;
+    opacity: 1;
+}
+
+.buttonClass {
+    text-align: center;
+}
+
+
+/* Try it now - Speaker */
+
+.move {
+    position: relative;
+    left: 150px;
+}
+
+
+/* Try it now - Perks */
+
+.movePerk {
+    position: relative;
+    left: 480px;
+}
+
+.moveReview {
+    position: relative;
+    top: 40px;
+    left: 180px;
+}
+
+.reviews {
+    margin-bottom: -35%;
+}
+
+.menuDiv {
+    padding-bottom: 10%;
+}
+
+
+/* EXCP */
+
+.excArea {
+    background: #191919;
+}
+
+.expHeading {
+    font-size: 50px;
+    color: #D34848;
+    font-weight: bold;
+    padding-top: 230px;
+    padding-left: 150px;
+}
+
+.expPara {
+    color: white;
+    font-weight: bold;
+    padding-top: 20px;
+    font-size: 20px;
+    padding-left: 155px;
+}
+
+.moveExp {
+    position: relative;
+    top: -120px;
+    left: 400px;
+}
+
+
+/* Mobile queires are in slideshow.css */

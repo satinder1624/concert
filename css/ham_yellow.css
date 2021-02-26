@@ -1,0 +1,202 @@
+.menu_yellow {
+	width: 500px;
+}
+.ham_menu_yellow{
+    height: 10px;
+	position:absolute;
+	z-index: 9;
+}
+.menuHeading{
+    color: white;
+    padding-top: 15px;
+    width: 500px;
+}
+/* Position of menu */
+.menu_yellow.menu-yellow--top-left {
+	top: 30px;
+	left: 83px;
+}
+
+.yellowpan{
+	color: #FFB33F;
+}
+/* This means when clicked */
+.menu_yellow:after {
+	position: absolute;
+	margin-left: 77px;
+	margin-top: 90px;
+	content: " ";
+	/* Background color when expand */
+	background: black;
+	z-index: -1;
+	width: 0;
+	height: 0;
+
+	/* When you click the draging effect of only yellow container not the txt */
+	-webkit-transition: all .5s cubic-bezier(0, 0, 0, 1);
+	   -moz-transition: all .5s cubic-bezier(0, 0, 0, 1);
+	    -ms-transition: all .5s cubic-bezier(0, 0, 0, 1);
+	     -o-transition: all .5s cubic-bezier(0, 0, 0, 1);
+	        transition: all .5s cubic-bezier(0, 0, 0, 1);
+}
+
+
+.menu_yellow.menu-yellow--top-left:after {
+	border-radius: 100%;
+	top: 0;
+	left: 0;
+}
+
+.menu_yellow.in:after {
+	top: -249px;
+	left: -245px;
+	width: 450px;
+	height: 400px;
+}
+
+.menu_yellow.in {
+	width: 40vh;
+	height: 65vh;
+}
+/* 
+body{
+	background-color: black;
+} */
+.menu_yellow .menu__hamburger_ico_yellow {
+	position: relative;
+	display: inline-block;
+	/* background: black; */
+	color: #D24848;
+	height: 70px;
+	width: 70px;
+	-webkit-transition: all .25s ease-in;
+	   -moz-transition: all .25s ease-in;
+	    -ms-transition: all .25s ease-in;
+	     -o-transition: all .25s ease-in;
+	        transition: all .25s ease-in;
+	cursor: pointer;
+	z-index: 99;
+}
+
+.menu_yellow.menu-yellow--top-left .menu__hamburger_ico_yellow {	
+	float: left;
+}
+
+.menu_yellow .menu__hamburger_ico_yellow span {
+	position: absolute;
+	display: inline-block;
+	height: 3px;
+	width: 40px;
+	border-radius: 10px;
+	background: white;
+	/* Three white lines */
+	-webkit-transition: all .25s cubic-bezier(0, 0, 1, 1);
+	   -moz-transition: all .25s cubic-bezier(0, 0, 1, 1);
+	    -ms-transition: all .25s cubic-bezier(0, 0, 1, 1);
+	     -o-transition: all .25s cubic-bezier(0, 0, 1, 1);
+	        transition: all .25s cubic-bezier(0, 0, 1, 1);
+}
+
+.menu_yellow.menu-yellow--top-left .menu__hamburger_ico_yellow span {
+	left: 10px;
+}
+
+.menu_yellow .menu__hamburger_ico_yellow span:first-child {
+	top: 20px;
+}
+.menu_yellow .menu__hamburger_ico_yellow span:nth-child(2) {
+	top: 35px;
+}
+.menu_yellow .menu__hamburger_ico_yellow span:last-child {
+	top: 50px;
+}
+.menu_yellow.menu-yellow--top-left .menu__hamburger_ico_yellow span:first-child {
+	transform-origin: left;
+}
+
+.menu_yellow.menu-yellow--top-left .menu__hamburger_ico_yellow span:last-child {
+	transform-origin: left;
+}
+
+.menu_yellow .menu__nav_list_yellow {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	top: 150px;
+    z-index: 1;
+	-webkit-transform: translateY(-65%);
+	   -moz-transform: translateY(-65%);
+	    -ms-transform: translateY(-65%);
+	     -o-transform: translateY(-65%);
+	        transform: translateY(-65%);
+}
+
+.menu_yellow.menu-yellow--top-left .menu__nav_list_yellow {
+	left: 5%;
+	text-align: left;
+}
+
+.menu_yellow .menu__nav_list_yellow li a {
+	position: relative;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 40px;
+	color: white;
+	visibility: hidden;
+	opacity: 0;
+	text-decoration: none;
+}
+
+
+.menu_yellow.menu-yellow--top-left .menu__nav_list_yellow li a {
+	-webkit-transform: translateX(-2px);
+	   -moz-transform: translateX(-2px);
+	    -ms-transform: translateX(-2px);
+	     -o-transform: translateX(-2px);
+	        transform: translateX(2px);
+}
+
+.menu_yellow.in .menu__nav_list_yellow li a {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: translateX(0);
+	   -moz-transform: translateX(0);
+	    -ms-transform: translateX(0);
+	     -o-transform: translateX(0);
+	        transform: translateX(0);
+	-webkit-transition: all .25s ease;
+	   -moz-transition: all .25s ease;
+	    -ms-transition: all .25s ease;
+	     -o-transition: all .25s ease;
+	        transition: all .25s ease;
+
+}
+.menu_yellow.in .menu__nav_list_yellow li a:before {
+	position: absolute;
+	content: " ";
+	width: 0;
+	height: 2px;
+	background: #fff;
+	border-radius: 5px;
+	top: 10%;
+	-webkit-transition: all .25s ease;
+	   -moz-transition: all .25s ease;
+	    -ms-transition: all .25s ease;
+	     -o-transition: all .25s ease;
+	        transition: all .25s ease;
+}
+
+
+.menu_yellow.in .menu__nav_list_yellow li:nth-child(1) a { transition-delay: .15s; }
+.menu_yellow.in .menu__nav_list_yellow li:nth-child(2) a { transition-delay: .30s; }
+.menu_yellow.in .menu__nav_list_yellow li:nth-child(3) a { transition-delay: .45s; }
+.menu_yellow.in .menu__nav_list_yellow li:nth-child(4) a { transition-delay: .60s; }
+.menu_yellow.in .menu__nav_list_yellow li:nth-child(5) a { transition-delay: .75s; }
+.menu_yellow.in .menu__nav_list_yellow li:nth-child(6) a { transition-delay: .90s; }
+.menu_yellow.in .menu__nav_list_yellow li:nth-child(7) a { transition-delay: 1.05s; }
+.menu_yellow.in .menu__nav_list_yellow li:nth-child(8) a { transition-delay: 1.2s; }
+.menu_yellow.in .menu__nav_list_yellow li:nth-child(9) a { transition-delay: 1.35s; }
+.menu_yellow.in .menu__nav_list_yellow li:nth-child(10) a { transition-delay: 1.5s; }
+

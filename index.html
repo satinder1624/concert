@@ -1,0 +1,464 @@
+<!-- Satinder Singh -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enjoy Concert</title>
+    <!-- Bootstrap Linking-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Icon  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Css Linking-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="css/ham_price.css">
+    <link rel="stylesheet" href="css/ham_speaker.css">
+    <link rel="stylesheet" href="css/ham_yellow.css">
+    <link rel="stylesheet" href="css/ham_review.css">
+    <!-- Js Linking -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <!-- Main Area Starting here -->
+    <section class="landingArea">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-6">
+                <!-- HamberMenu  -->
+                <section class="ham_menu">
+                    <div class="dd-wrapper">
+                        <div class="dd-center-content">
+                            <div class="dd-elements">
+                                <div class="menu menu--top-left" id="menu_top_left">
+                                    <a class="menu__hamburger_ico" dd-toggle="menu_top_left">
+                                        <!-- Three Lines -->
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </a>
+                                    <h1 class="menuHeading">EXP|CON</h1>
+                                    <!-- Nav Links -->
+                                    <ul class="menu__nav_list">
+                                        <li><a href="#">WHAT IT IS</a></li>
+                                        <li><a href="#areaPerk"><span class="perkClass">PERKS</span></a></li>
+                                        <li><a href="price.html">PRICING</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Images Slides -->
+            <div class="slideshow-container">
+                <!-- First slide -->
+                <div class="col-lg-12 col-md-6 img1 mySlides fade">
+                    <h1 class="landingMainHeading">INTERACTIVE CONCERT EXPERIENCE</h1>
+                    <p class="landingMainPara">Experience your favourite artists like never<br> before and from the comfort of your own home.</p>
+                    <div class="buttonClass col-lg-12 col-md-12">
+                        <a href="price.html">
+                            <button class="button tryButton girlsDancingButton">
+                                <span>
+                                    TRY IT NOW
+                                </span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Second slide -->
+                <div class="col-lg-12 col-md-6 img2 mySlides fade">
+                    <h1 class="landingMainHeading">INTERACTIVE CONCERT EXPERIENCE</h1>
+                    <p class="landingMainPara">Experience your favourite artists like never<br> before and from the comfort of your own home.</p>
+
+                    <div class="buttonClass col-lg-12 col-md-12">
+                        <a href="price.html">
+                            <button class="button tryButton girlsDancingButton">
+                                <span>
+                                    TRY IT NOW
+                                </span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Third Slide -->
+                <div class="col-lg-12 col-md-6 img3 mySlides fade">
+                    <h1 class="landingMainHeading">INTERACTIVE CONCERT EXPERIENCE</h1>
+                    <p class="landingMainPara">Experience your favourite artists like never<br> before and from the comfort of your own home.</p>
+
+                    <div class="buttonClass col-lg-12 col-md-12">
+                        <a href="price.html">
+                            <button class="button tryButton girlsDancingButton">
+                                <span>
+                                    TRY IT NOW
+                                </span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <!-- Three dots -->
+            <div class="dotClass" style="text-align:center">
+                <span class="dot" id="firstSlideImg"> </span>
+                <span class="dot" id="secondSlideImg"> </span>
+                <span class="dot" id="thirdSlideImg"> </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speaker Section Starts From here -->
+    <section class="speaker">
+        <!-- Circle Cursor  -->
+        <div class="cursorType" id="CLICK">
+
+        </div>
+        <div class="row">
+            <!-- Hamburger Menu -->
+            <div class="col-lg-6 col-md-6">
+                <div class="dd-wrapper ham_menu_speaker Padding">
+                    <div class="dd-center-content">
+                        <div class="dd-elements">
+                            <div class="menu_speaker menu-speaker--top-left" id="menu_top_speaker">
+                                <a class="menu__hamburger_ico_speaker" dd-toggle="menu_top_speaker" id="spanID_speaker">
+                                    <!-- Three Lines -->
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                                <h1 id="reviewMenuHeading_speaker" class="menuHeading">EXP|CON</h1>
+                                <ul class="menu__nav_list_speaker">
+                                    <!-- Nav Lists -->
+                                    <li><a href="#"><span class="what_speaker">WHAT IT IS</span></a></li>
+                                    <li><a href="#areaPerk">PERKS</a></li>
+                                    <li><a href="price.html">PRICING</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="buttonClass col-lg-6 col-md-6">
+                <a href="price.html">
+                    <button class="button tryButton move mobile">
+                        <span>
+                            TRY IT NOW
+                        </span>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-7 col-md-6 center">
+                <h2 class="speakerHeading">SUPERIOR SOUND</h2>
+                <h3 class="subHeading">Experience live version of your favourite songs.</h3>
+
+                <button class="demoButton">
+                    <span>
+                        SEE DEMO
+                    </span>
+                </button>
+
+            </div>
+
+            <!-- Speaker Images -->
+            <div class="col-lg-4 col-md-6 testing" id="here">
+                <img src="images/medium17.png" class="firstImage common mobile_speaker_first">
+                <img src="images/medium27.png" class="secondImage common mobile_speaker_second">
+            </div>
+        </div>
+    </section>
+
+    <!-- Front row seats section -->
+    <section class="yellowMainSection">
+        <!-- Circle Cursor -->
+        <div class="dragType" id="REVEAL">
+
+        </div>
+
+        <section class="yellow">
+            <div class="back" id="area">
+                <div class="row">
+                    <!-- Hamburger Menu -->
+                    <div class="col-lg-6 col-md-6">
+                        <section class="ham_menu_yellow">
+                            <div class="dd-wrapper">
+                                <div class="dd-center-content">
+                                    <div class="dd-elements">
+                                        <div class="menu_yellow menu-yellow--top-left" id="menu_top_yellow">
+                                            <a class="menu__hamburger_ico_yellow" dd-toggle="menu_top_yellow" id="spanID_yellow">
+                                                <!-- Menu Lines -->
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </a>
+                                            <h1 class="menuHeading" id="yellowHeading">EXP|CON</h1>
+                                            <ul class="menu__nav_list_yellow">
+                                                <!-- Nav Lists -->
+                                                <li><a href="#"><span class="yellowpan">WHAT IT IS</span></a></li>
+                                                <li><a href="#areaPerk">PERKS</a></li>
+                                                <li><a href="price.html">PRICING</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Buttton -->
+                    <div class="buttonClass col-lg-6 col-md-6">
+                        <a href="price.html">
+                            <button class="button  yelloTryButton position" id="yellowButoonChange">
+                                <span>
+                                    TRY IT NOW
+                                </span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <!-- Writing area -->
+                <div class="row" id="mainArea">
+                    <div class="col-lg-8">
+                        <h2 class="yelloHeading commomColor mobile_font">FRONT ROW SEATS</h2>
+                        <p class="yelloSubline  commomSColor mobile_font">Experience concerts up close and personal.</p>
+                        <button class="demoButton yelloButton">
+                            <span>
+                                SEE DEMO
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Perk Section -->
+    <section class="perksArea" id="areaPerk">
+        <!-- Hamburger Menu -->
+        <section class="ham_menu">
+            <div class="dd-wrapper">
+                <div class="dd-center-content">
+                    <div class="dd-elements">
+                        <div class="menu menu--top-left" id="menu_top_perk">
+                            <a class="menu__hamburger_ico" dd-toggle="menu_top_perk">
+                                <!-- Menu Lines -->
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                            <h1 class="menuHeading">EXP|CON</h1>
+                            <ul class="menu__nav_list">
+                                <!-- Nav Links -->
+                                <li><a href="#">WHAT IT IS</a></li>
+                                <li><a href="#areaPerk"><span class="perkClass">PERKS</span></a></li>
+                                <li><a href="price.html">PRICING</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Button -->
+        <div class="buttonClass col-lg-12 col-md-12">
+            <a href="price.html">
+                <button class="button tryButton try movePerk">
+                    <span>
+                        TRY IT NOW
+                    </span>
+                </button>
+            </a>
+        </div>
+
+        <!-- Perks Description -->
+        <section class="priceSection" id="price">
+            <div class="price container-fluid">
+                <h1>PERKS</h1>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- First perk statement -->
+                    <div class="col-lg-4 col-md-12 basicClass">
+                        <hr class="perksFirstLine">
+                        <h4 class="perksItems perksFirst">Subscription<br>Payment<br>Model</h4>
+                        <p class="subLinePerks">No commitment, cancel anytime.<br> Never worry about forgetting a payment again!</p>
+                    </div>
+                    <!-- Second perk statement -->
+                    <div class="col-lg-4 col-md-12 advancedClass">
+                        <hr class="perksSecondLine">
+                        <h4 class="perksItems perksSecond">No Fee<br>Cancekation<br> Policy</h4>
+                        <p class="subLinePerks">No commitment, cancel anytime.<br> Never worry about forgetting a payment again!</p>
+                    </div>
+                    <!-- Third perk statement -->
+                    <div class="col-lg-4 col-md-12 proClass">
+                        <hr class="perksThirdLine">
+                        <h4 class="perksItems perksThird">Subscription<br>Payment<br>Model</h4>
+                        <p class="subLinePerks">No commitment, cancel anytime.<br> Never worry about forgetting a payment again!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Review -->
+    <section class="reviews">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 menuDiv">
+                <!-- Hamburger Menu -->
+                <section class="ham_menu">
+                    <div class="dd-wrapper">
+                        <div class="dd-center-content">
+                            <div class="dd-elements">
+                                <div class="menu_review menu-review--top-left" id="menu_top_review">
+                                    <a class="menu__hamburger_ico_review" dd-toggle="menu_top_review" id="spanID">
+                                        <!-- Menu Lines -->
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </a>
+                                    <h1 id="reviewMenuHeading" class="menuHeading">EXP|CON</h1>
+                                    <ul class="menu__nav_list_review">
+                                        <!-- Nav Links -->
+                                        <li><a href="#"><span class="what">WHAT IT IS</span></a></li>
+                                        <li><a href="#areaPerk">PERKS</a></li>
+                                        <li><a href="price.html">PRICING</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- Button -->
+            <div class="buttonClass col-lg-6 col-md-6">
+                <a href="price.html">
+                    <button class="button tryButtonReview moveReview mobileReviewButton">
+                        <span>
+                            TRY IT NOW
+                        </span>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Review speakers -->
+            <div class="col-lg-4 col-md-6 mobile_r">
+                <img src="images/SmallSpeaker1-03.png" class="reviewImageCommon reviewFirstImage">
+                <img src="images/SmallSpeaker2-03.png" class="reviewImageCommon reviewSecondImage">
+            </div>
+            <div class="col-lg-8 col-md-4 pic col-md-4 col-sm-4 position_mobile">
+                <h3 class="reviewHeading">REVIEWS</h3>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <!-- Stars -->
+                        <i class="fas fa-star fa-2x"> </i>
+                        <i class="fas fa-star fa-2x"> </i>
+                        <i class="fas fa-star fa-2x"> </i>
+                        <i class="fas fa-star fa-2x"> </i>
+                        <i class="fas fa-star fa-2x"> </i>
+                        <h5 class="rSubHeading">ARTIST</h5>
+                        <p class="rContent">
+                            “Love it, it’s the Best.I can’t live without it!”
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <!-- Stars -->
+                        <i class="fas fa-star fa-2x"> </i>
+                        <i class="fas fa-star fa-2x"> </i>
+                        <i class="fas fa-star fa-2x"> </i>
+                        <i class="fas fa-star fa-2x"> </i>
+                        <i class="fas fa-star fa-2x"> </i>
+                        <h5 class="rSubHeading">PROCEDURE</h5>
+                        <p class="rContent">“Love it, it’s the Best.I can’t live without it!”</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <!-- Stars -->
+                        <i class="fas fa-star fa-2x"> </i>
+                        <i class="fas fa-star fa-2x"> </i>
+                        <i class="fas fa-star fa-2x"> </i>
+                        <i class="fas fa-star fa-2x"> </i>
+                        <i class="fas fa-star fa-2x"> </i>
+                        <h5 class="rSubHeading">MUSIC FAN</h5>
+                        <p class="rContent">“Love it, it’s the Best.I can’t live without it!”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPCON Area -->
+
+    <section class="excArea">
+        <!-- Ham_Here -->
+        <section class="ham_menu">
+            <div class="dd-wrapper">
+                <div class="dd-center-content">
+                    <div class="dd-elements">
+                        <div class="menu menu--top-left" id="menu_top_exp">
+                            <a class="menu__hamburger_ico" dd-toggle="menu_top_exp">
+                                <!-- Ham Menu -->
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                            <h1 class="menuHeading">EXP|CON</h1>
+                            <ul class="menu__nav_list">
+                                <!-- Links -->
+                                <li><a href="#">WHAT IT IS</a></li>
+                                <li><a href="#areaPerk"><span class="perkClass">PERKS</span></a></li>
+                                <li><a href="price.html">PRICING</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <h1 class="expHeading">GET EXP|CON NOW</h1>
+        <p class="expPara">Purchase and download the app.</p>
+
+        <div class="buttonClass col-lg-12 col-md-12">
+            <a href="price.html">
+                <button class="button tryButton try moveExp mobile_button">
+                    <span>
+                        TRY IT NOW
+                    </span>
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer Area -->
+    <section class="priceFotter">
+        <fotter class="pricePageFotter">
+            <div class="container">
+                <i class="fas fa-envelope icon"> </i><a class="mailLink" href="mailto:support@experienceconcerts.co">support@experienceconcerts.co</a>
+                <h2 class="fotterHeading">EXP | CON</h2>
+                <p class="fotterSub">2019 <i class="far fa-copyright"> </i> All Rights Reserved | Speer Technologies Incorporated
+                </p>
+            </div>
+        </fotter>
+    </section>
+
+    <script>
+    </script>
+</body>
+
+</html>

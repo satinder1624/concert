@@ -1,0 +1,196 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Linking-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Css Linking-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ham_payment.css">
+    <title>Payment View</title>
+</head>
+
+<body>
+    <section class="ham_menu Padding">
+        <div class="dd-wrapper">
+            <div class="dd-center-content">
+                <div class="dd-elements">
+                    <div class="menu menu--top-left" id="menu_top_left">
+                        <a class="menu__hamburger_ico" dd-toggle="menu_top_left" id="spanID">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                        <h1 id="reviewMenuHeading" class="menuHeading">EXP|CON</h1>
+                        <ul class="menu__nav_list">
+                            <li><a href="#"><span class="what">WHAT IT IS</span></a></li>
+                            <li><a href="#perk">PERKS</a></li>
+                            <li><a href="#price">PRICING</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="paymet">
+        <div class="paymentHeading">
+            <h1 class="priceHeading">PAYMENT</h1>
+            <form>
+                <div class="row firstPriceSection">
+                    <div class="col-lg-12">
+                        <spna class="priceText">1. Select your plan</spna>
+                        <br>
+                        <p class="radioOptions">
+                            <input type="radio" id="radioBasic" name="palnRadio" checked value="basic">
+                            <label for="radioBasic">BASIC</label>
+                            <input type="radio" id="radioAdvanced" name="palnRadio" value="advanced">
+                            <label for="radioAdvanced">ADVANCED</label>
+                            <input type="radio" id="radioPro" name="palnRadio" value="pro">
+                            <label for="radioPro">PRO</label>
+                        </p>
+                    </div>
+                </div>
+                <div class="row secondPriceSection">
+                    <div class="col-lg-6 billing">
+                        <spna class="priceText">2. Billing Information</spna>
+                        <br>
+                        <label for="name" class="billingArea">FULL NAME</label>
+                        <input type="text" name="name" id="name" class="textField" onkeydown="stoppedTyping(this.value)" />
+                        <label for="billAddress" class="billingArea">BILLING ADDRESS</label>
+                        <input type="text" name="billAddress" id="billAddress" class="textField" onkeydown="stoppedTyping(this.value)" />
+
+                        <div class="cityStyle">
+                            <label for="city" class="billingArea">CITY</label>
+                            <input type="text" name="city" id="city" class="textField" onkeydown="stoppedTyping(this.value)" />
+                        </div>
+
+                        <div class="postalStyle">
+                            <label for="postal" class="billingArea">POSTAL CODE</label>
+                            <input type="text" name="postal" id="postal" class="textField" onkeydown="stoppedTyping(this.value)" />
+                        </div>
+
+                        <label for="selection" class="billingArea">COUNTRY</label>
+                        <select id="selection" class="billingArea">
+                            <option></option>
+                            <option>Canada</option>
+                            <option>USA</option>
+                        </select>
+
+
+
+
+                    </div>
+                    <div class="col-lg-6 cardInfo">
+                        <div class="col-lg-6 credit">
+                            <spna class="cardText">3. Credit Card Information</spna>
+                            <br>
+                            <label for="nameCard" class="creditArea">CARDHOLDER'S NAME</label>
+                            <input type="text" name="name" id="nameCard" class="textField" onkeydown="stoppedTyping(this.value)" style="width:250px;" />
+                            <label for="cardNumber" class="creditArea">CARD NUMBER</label>
+                            <input type="text" name="cardNumber" id="cardNumber" class="textField" onkeydown="stoppedTyping(this.value)" style="width:250px;" />
+
+                            <div class="monthStyle">
+                                <label for="selectionMonth" class="creditArea">MONTH</label>
+                                <select id="selectionMonth" class="creditArea" style="width:120px;">
+                                    <option></option>
+                                    <option>01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                    <option>05</option>
+                                    <option>06</option>
+                                    <option>07</option>
+                                    <option>08</option>
+                                    <option>09</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select>
+                            </div>
+
+                            <div class="year">
+                                <label for="selectionYear" class="creditArea">YEAR</label>
+                                <select id="selectionYear" class="creditArea" style="width:120px;">
+                                    <option></option>
+                                    <option>2021</option>
+                                    <option>2022</option>
+                                    <option>2023</option>
+                                    <option>2024</option>
+                                </select>
+                            </div>
+
+                            <label for="cityCard" class="creditArea">CITY</label>
+                            <input type="text" name="cityname" id="cityCard" class="textField" onkeydown="stoppedTyping(this.value)" style="width:250px;" />
+                        </div>
+                    </div>
+                </div>
+                <div class="termsDiv">
+                    <p>
+                        By continuing. I acknowledge that I've read and agree to the<br><span class="terms">Terms of
+                            Service & Privacy Policy</span>
+                    </p>
+
+                </div>
+                <div class="testButton">
+                    <a href="#" id="linkDownlad" class="download" data-text="DOWNLOAD">DOWNLOAD</a>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <section class="priceFotter">
+        <fotter class="pricePageFotter">
+            <i class="fas fa-envelope icon"> </i><a class="mailLink" href="mailto:support@experienceconcerts.co">support@experienceconcerts.co</a>
+            <h2 class="fotterHeading">EXP | CON</h2>
+            <p class="fotterSub">2019 <i class="far fa-copyright"> </i> All Rights Reserved | Speer Technologies Incorporated
+            </p>
+        </fotter>
+    </section>
+
+    <script>
+        function stoppedTyping(e) {
+            if (e.length >= 0) {
+                document.getElementById('linkDownlad').style.pointerEvents = "fill";
+
+            } else {
+                document.getElementById('linkDownlad').style.pointerEvents = "none";
+            }
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script>
+        $('[dd-toggle]').on('click', function() {
+            var menu_id = $(this).attr('dd-toggle');
+            $('#' + menu_id).toggleClass('in');
+            $(this).toggleClass('in');
+        });
+
+
+
+        var firstCheck = false;
+        document.getElementById("spanID").addEventListener("click", function() {
+            firstCheck ? close() : open();
+        });
+
+        function open() {
+            document.getElementById("reviewMenuHeading").style.color = "#D24848";
+            firstCheck = true;
+        };
+
+        function close() {
+            document.getElementById("reviewMenuHeading").style.color = "black";
+            firstCheck = false;
+        };
+    </script>
+</body>
+
+</html>

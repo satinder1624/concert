@@ -1,0 +1,124 @@
+/* Slideshow container */
+
+.slideshow-container {
+    width: 100%;
+    height: auto;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background: transparent;
+    border: 1.5px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 1s ease;
+}
+
+.dotClass {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+}
+
+.active {
+    background-color: white;
+}
+
+.dot:hover {
+    cursor: pointer;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 25s;
+    animation-name: fade;
+    animation-duration: 10s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .1
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .1
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: red;
+    }
+    .dotClass {
+        position: relative;
+        top: -25px;
+    }
+    .landingArea {
+        margin-bottom: -24px;
+    }
+    .mobile {
+        position: relative;
+        top: -97px;
+    }
+    .mobile_speaker_first {
+        position: relative;
+        left: -27px;
+    }
+    .mobile_speaker_second {
+        position: relative;
+        left: 200px;
+    }
+    .back {
+        height: 50%;
+    }
+    .position_mobile {
+        position: relative;
+        top: -400px;
+    }
+    .mobileReviewButton {
+        position: relative;
+        top: 1600px;
+        left: -10px;
+    }
+    .expHeading,
+    .expPara,
+    .mobile_button {
+        position: relative;
+        top: -50px;
+        left: -55px;
+    }
+    .expHeading {
+        line-height: 55px;
+    }
+    .mobile_font {
+        font-size: 40px;
+    }
+}

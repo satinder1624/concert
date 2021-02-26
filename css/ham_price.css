@@ -1,0 +1,255 @@
+.menu {
+    width: 500px;
+}
+
+.ham_menu {
+    padding: 5%;
+    padding-bottom: 20%;
+    height: 10px;
+    position: absolute;
+    z-index: 9;
+}
+
+.menuHeading {
+    color: white;
+    padding-top: 15px;
+    width: 500px;
+}
+
+
+/* Position of menu */
+
+.menu.menu--top-left {
+    top: 30px;
+    left: 83px;
+}
+
+.perkClass {
+    color: black;
+}
+
+
+/* This means when clicked */
+
+.menu:after {
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 90px;
+    content: " ";
+    /* Background color when expand */
+    background: #1FE1E9;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    /* When you click the draging effect of only yellow container not the txt */
+    -webkit-transition: all .5s cubic-bezier(0, 0, 0, 1);
+    -moz-transition: all .5s cubic-bezier(0, 0, 0, 1);
+    -ms-transition: all .5s cubic-bezier(0, 0, 0, 1);
+    -o-transition: all .5s cubic-bezier(0, 0, 0, 1);
+    transition: all .5s cubic-bezier(0, 0, 0, 1);
+}
+
+.menu.menu--top-left:after {
+    border-radius: 100%;
+    top: 0;
+    left: 0;
+}
+
+.menu.in:after {
+    top: -142px;
+    left: -210px;
+    width: 485px;
+    height: 420px;
+}
+
+.menu.in {
+    width: 40vh;
+    height: 65vh;
+}
+
+body {
+    background-color: black;
+}
+
+.menu .menu__hamburger_ico {
+    position: relative;
+    display: inline-block;
+    /* background: black; */
+    color: #fff;
+    height: 70px;
+    width: 70px;
+    -webkit-transition: all .25s ease-in;
+    -moz-transition: all .25s ease-in;
+    -ms-transition: all .25s ease-in;
+    -o-transition: all .25s ease-in;
+    transition: all .25s ease-in;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.menu.menu--top-left .menu__hamburger_ico {
+    float: left;
+}
+
+.menu .menu__hamburger_ico span {
+    position: absolute;
+    display: inline-block;
+    height: 3px;
+    width: 40px;
+    border-radius: 10px;
+    background: #fff;
+    /* Three white lines */
+    -webkit-transition: all .25s cubic-bezier(0, 0, 1, 1);
+    -moz-transition: all .25s cubic-bezier(0, 0, 1, 1);
+    -ms-transition: all .25s cubic-bezier(0, 0, 1, 1);
+    -o-transition: all .25s cubic-bezier(0, 0, 1, 1);
+    transition: all .25s cubic-bezier(0, 0, 1, 1);
+}
+
+.menu.menu--top-left .menu__hamburger_ico span {
+    left: 10px;
+}
+
+.menu .menu__hamburger_ico span:first-child {
+    top: 20px;
+}
+
+.menu .menu__hamburger_ico span:nth-child(2) {
+    top: 35px;
+}
+
+.menu .menu__hamburger_ico span:last-child {
+    top: 50px;
+}
+
+.menu.menu--top-left .menu__hamburger_ico span:first-child {
+    transform-origin: left;
+}
+
+.menu.menu--top-left .menu__hamburger_ico span:last-child {
+    transform-origin: left;
+}
+
+.menu .menu__nav_list {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    top: 65%;
+    z-index: 1;
+    -webkit-transform: translateY(-65%);
+    -moz-transform: translateY(-65%);
+    -ms-transform: translateY(-65%);
+    -o-transform: translateY(-65%);
+    transform: translateY(-65%);
+}
+
+.menu.menu--top-left .menu__nav_list {
+    left: 20%;
+    text-align: left;
+}
+
+.menu .menu__nav_list li a {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    text-decoration: none;
+}
+
+.menu.menu--top-left .menu__nav_list li a {
+    -webkit-transform: translateX(-2px);
+    -moz-transform: translateX(-2px);
+    -ms-transform: translateX(-2px);
+    -o-transform: translateX(-2px);
+    transform: translateX(2px);
+}
+
+.menu.in .menu__nav_list li a {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+.menu.in .menu__nav_list li a:before {
+    position: absolute;
+    content: " ";
+    width: 0;
+    height: 2px;
+    background: #fff;
+    border-radius: 5px;
+    top: 50%;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+.menu.in .menu__nav_list li:nth-child(1) a {
+    transition-delay: .15s;
+}
+
+.menu.in .menu__nav_list li:nth-child(2) a {
+    transition-delay: .30s;
+}
+
+.menu.in .menu__nav_list li:nth-child(3) a {
+    transition-delay: .45s;
+}
+
+.menu.in .menu__nav_list li:nth-child(4) a {
+    transition-delay: .60s;
+}
+
+.menu.in .menu__nav_list li:nth-child(5) a {
+    transition-delay: .75s;
+}
+
+.menu.in .menu__nav_list li:nth-child(6) a {
+    transition-delay: .90s;
+}
+
+.menu.in .menu__nav_list li:nth-child(7) a {
+    transition-delay: 1.05s;
+}
+
+.menu.in .menu__nav_list li:nth-child(8) a {
+    transition-delay: 1.2s;
+}
+
+.menu.in .menu__nav_list li:nth-child(9) a {
+    transition-delay: 1.35s;
+}
+
+.menu.in .menu__nav_list li:nth-child(10) a {
+    transition-delay: 1.5s;
+}
+
+@media only screen and (max-width: 600px) {
+    .menu.in:after {
+        top: -142px;
+        left: -210px;
+        width: 450px;
+        height: 350px;
+    }
+    .menu.menu--top-left .menu__nav_list {
+        left: 13%;
+    }
+    .menu .menu__nav_list {
+        top: 130%;
+    }
+}

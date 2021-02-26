@@ -1,0 +1,165 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Linking-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Css Linking -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ham_price.css">
+    <!-- Icon Links -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Price Checkout</title>
+</head>
+
+<body>
+
+    <section class="ham_menu">
+        <div class="dd-wrapper">
+            <div class="dd-center-content">
+                <div class="dd-elements">
+                    <div class="menu menu--top-left" id="menu_top_left">
+                        <a class="menu__hamburger_ico" dd-toggle="menu_top_left">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                        <h1 class="menuHeading">EXP|CON</h1>
+                        <ul class="menu__nav_list">
+                            <li><a href="#">WHAT IT IS</a></li>
+                            <li><a href="#perk"><span class="perkClass">PERKS</span></a></li>
+                            <li><a href="#price">PRICING</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+        <script>
+            $('[dd-toggle]').on('click', function() {
+                var menu_id = $(this).attr('dd-toggle');
+                $('#' + menu_id).toggleClass('in');
+                $(this).toggleClass('in');
+            });
+        </script>
+    </section>
+
+
+    <section class="priceSection" id="price">
+        <div class="price container-fluid">
+            <h1>PRICING</h1>
+            <p class="sublinePrice">Test out our app today! Choose from these subscription <br>Based payment models.</p>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 basicClass">
+                    <h4 class="basicItems">BASIC</h4>
+                    <hr class="basichr">
+                    <h4 class="basicItems">MONTHLY</h4>
+                    <h1 class="basicItems">$9</h1>
+                    <ul class="music">
+                        <li>Very Good</li>
+                        <li>Amazing</li>
+                        <li>Perfect Job</li>
+                        <li>Love This</li>
+                        <li>It's so good</li>
+                        <li>Features</li>
+                    </ul>
+
+                    <a href="payment.html">
+                        <button class="basicButton button">
+                            <span>SELECT</span>
+                        </button>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-12 advancedClass">
+                    <h4 class="advancedItems">ADVANCED</h4>
+                    <hr class="advancedhr">
+                    <h4 class="advancedItems">YEARLY</h4>
+                    <h1 class="advancedItems">$99</h1>
+                    <ul class="music">
+                        <li>Very Good</li>
+                        <li>Amazing</li>
+                        <li>Perfect Job</li>
+                        <li>Love This</li>
+                        <li>It's so good</li>
+                        <li>Features</li>
+                    </ul>
+                    <a href="payment.html">
+                        <button class="advancedButton button">
+                            <span>SELECT</span>
+                        </button>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-12 proClass">
+                    <h4 class="proItems">Pro</h4>
+                    <hr class="proHr">
+                    <h4 class="proItems">YEARLY</h4>
+                    <h1 class="proItems">$120</h1>
+                    <ul class="music">
+                        <li>Very Good</li>
+                        <li>Amazing</li>
+                        <li>Perfect Job</li>
+                        <li>Love This</li>
+                        <li>It's so good</li>
+                        <li>Features</li>
+                    </ul>
+                    <a href="payment.html">
+                        <button class="proButton button">
+                            <span>SELECT</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="perks" id="perk">
+        <div class="perk container-fluid">
+            <h1>PERKS</h1>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 basicClass">
+                    <hr class="perksLine">
+                    <h4 class="perksItems">Subscription<br>Payment<br>Model</h4>
+                    <p class="subLine">No commitment, cancel anytime. Never worry about forgetting a payment again!</p>
+                </div>
+
+                <div class="col-lg-4 col-md-12 advancedClass">
+                    <hr class="perksLine">
+                    <h4 class="perksItems">No Fee<br>Cancekation<br> Policy</h4>
+                    <p class="subLine">No commitment, cancel anytime. Never worry about forgetting a payment again!</p>
+                </div>
+
+                <div class="col-lg-4 col-md-12 proClass">
+                    <hr class="perksLine">
+                    <h4 class="perksItems">Subscription<br>Payment<br>Model</h4>
+                    <p class="subLine">No commitment, cancel anytime. Never worry about forgetting a payment again!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="priceFotter">
+        <fotter class="pricePageFotter">
+            <i class="fas fa-envelope icon">   </i><a class="mailLink" href="mailto:support@experienceconcerts.co">support@experienceconcerts.co</a>
+            <h2 class="fotterHeading">EXP | CON</h2>
+            <p class="fotterSub">2019 <i class="far fa-copyright"> </i> All Rights Reserved | Speer Technologies Incorporated</p>
+        </fotter>
+    </section>
+
+</body>
+
+</html>
